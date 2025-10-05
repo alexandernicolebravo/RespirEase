@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.RespiratoryhealthApp" parent="android:Theme.Material.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        
+        <!-- Default window background -->
+        <item name="android:windowBackground">#F0FFFFFF</item>
+    </style>
+    
+    <!-- Base splash screen theme used for API < 31 -->
+    <style name="Theme.RespiratoryhealthApp.Starting" parent="Theme.RespiratoryhealthApp">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+    <!-- SplashScreen theme for Android 12+ (API 31+) -->
+    <style name="Theme.RespiratoryhealthApp.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_logo2</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/splash_icon_background</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.RespiratoryhealthApp</item>
+    </style>
+</resources>
